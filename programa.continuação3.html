@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h3>Usando a mesma função pulaLinha com outra forma de escrita (sem document.write) e criação da função mostra, uma função que recebe parâmetro.</h3>
+Também é possível a utilização de uma função "dentro" da outra (nesse caso a função pulaLinha foi usada dentro do mostra).
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var ano = 2016;
+
+    pulaLinha();
+    
+    mostra("Flávio tem " + (ano - 1977) + " anos");
+    
+    mostra("Joaquim tem " + (ano - 1996) + " anos");
+
+    ano = 2017;
+    mostra("Barney tem " + (ano - 1976) + " anos");
+
+</script>

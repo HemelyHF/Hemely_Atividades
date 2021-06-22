@@ -1,0 +1,65 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+	function calculaImc(altura, peso) {
+
+    var imc = peso / (altura * altura);
+    return imc
+}
+
+	var imcFlavio = calculaImc(1.71, 73);
+	var imcAmigo = calculaImc(1.72,68);
+	// Não precisa das variáveis imc do Flávio, nem do imc do Amigo se tiver a váriavel abaixo, dentro de uma variável pode ter outra variável, na hora de o navegador interpretar ele vai calcular as variáveis separadamente e depois juntar (isso se estiverem dentro do parênteses.)
+	var totalImc = calculaImc(1.71, 73) + calculaImc(1.72,68);
+mostra(imcFlavio);
+mostra(imcAmigo);
+
+</script>
+
+<br><br><br>
+
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+	function calculaImc(altura, peso) {
+
+    var imc = peso / (altura * altura);
+	return imc;
+}
+	var nome = prompt("Informe o seu nome");
+	var alturaInformada = prompt(nome + ", informe sua altura");
+	var pesoInformado = prompt(nome + ", informe seu peso");
+	var imc = calculaImc(alturaInformada,pesoInformado);
+
+	mostra(nome + ", O seu IMC é " + imc);
+
+
+</script>
+

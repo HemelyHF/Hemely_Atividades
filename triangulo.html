@@ -1,0 +1,248 @@
+<canvas width="600" height="400"></canvas>
+ <br>
+ Hemely Heidemann Fontanella
+<script>
+
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	pincel.fillStyle = "black";
+	pincel.fillRect(0, 0, 600, 400);
+
+	pincel.fillStyle= 'purple';
+	pincel.beginPath();
+	pincel.lineTo(400, 60);
+	pincel.lineTo(150, 200);
+	pincel.lineTo(400, 400);
+	pincel.lineTo(400, 200);
+	pincel.fill();
+
+	pincel.fillStyle='red';
+	pincel.beginPath();
+	pincel.moveTo(310, 182); //início - ponto 1
+	pincel.lineTo(200, 400); //ponto 2
+	pincel.lineTo(400, 400); //ponto 3
+	pincel.fill();
+
+	pincel.fillStyle= 'gray';
+	pincel.beginPath();
+	pincel.lineTo(200, 39);
+	pincel.lineTo(70, -10);
+	pincel.lineTo(180, 200);
+	pincel.lineTo(180, 200);
+	pincel.fill();
+
+	pincel.fillStyle='white';
+	pincel.beginPath();
+	pincel.moveTo(200, 40);
+	pincel.lineTo(100, 300);
+	pincel.lineTo(200, 400);
+	pincel.fill();
+
+	pincel.fillStyle='pink';
+	pincel.beginPath();
+	pincel.lineTo(200, 240);
+	pincel.lineTo(250, 300);
+	pincel.lineTo(350, 100);
+	pincel.lineTo(200,400);
+	pincel.fill();
+
+	pincel.fillStyle='blue';
+	pincel.beginPath();
+	pincel.lineTo(200, 240);
+	pincel.lineTo(250, 300); 
+	pincel.lineTo(310, 182);
+	pincel.fill();
+
+	pincel.fillStyle='green';
+	pincel.beginPath();
+	pincel.lineTo(102, 1); //base esquerda
+	pincel.lineTo(350, 100); //altura(baixo)
+	pincel.lineTo(400, 1); //base direita
+	pincel.fill();
+
+	pincel.fillStyle='purple';
+	pincel.beginPath();
+	pincel.lineTo(1, 50); //base esquerda
+	pincel.lineTo(76, 1); //altura
+	pincel.lineTo(104, 50); //base direita
+	pincel.fill();
+
+	pincel.fillStyle='red';
+	pincel.beginPath();
+	pincel.lineTo(1, 1); //base esquerda
+	pincel.lineTo(76, 1); //altura
+	pincel.lineTo(1, 50); //base direita
+	pincel.fill();
+
+	pincel.fillStyle='Yellow';
+	pincel.beginPath();
+	pincel.lineTo(1, 50);
+	pincel.lineTo(155, 153);
+	pincel.lineTo(104, 50);
+	pincel.fill();
+
+	pincel.fillStyle='Orange';
+	pincel.beginPath();
+	pincel.lineTo(200, 40);
+	pincel.lineTo(200, 240);
+	pincel.lineTo(350, 100);
+	pincel.fill();
+
+	pincel.fillStyle= 'violet';
+	pincel.beginPath();
+	pincel.lineTo(1, 50);
+	pincel.lineTo(100, 300);
+	pincel.lineTo(157, 154);
+	pincel.fill();
+
+	pincel.fillStyle= 'violet';
+	pincel.beginPath();
+	pincel.lineTo(400, 100); //
+	pincel.lineTo(400, 1); // topo
+	pincel.lineTo(550, 100);
+	pincel.fill();
+
+	pincel.fillStyle='gold';
+	pincel.beginPath();
+	pincel.lineTo(1, 50);
+	pincel.lineTo(1, 219);
+	pincel.lineTo(100, 300);
+	pincel.fill();
+
+	pincel.fillStyle='gold';
+	pincel.beginPath();
+	pincel.lineTo(400, 1); 
+	pincel.lineTo(600, 154);
+	pincel.lineTo(600, 1); 
+	pincel.fill();
+
+	pincel.fillStyle='silver';
+	pincel.beginPath();
+	pincel.lineTo(1, 219);
+	pincel.lineTo(100, 300);
+	pincel.lineTo(1, 400);
+	pincel.fill();
+
+	pincel.fillStyle='brown';
+	pincel.beginPath();
+	pincel.lineTo(400, 1);
+	pincel.lineTo(400, 140);
+	pincel.lineTo(310, 182);
+	pincel.fill();
+
+	pincel.fillStyle='white';
+	pincel.beginPath();
+	pincel.lineTo(400, 100); 
+	pincel.lineTo(500, 200);
+	pincel.lineTo(600, 154);
+	pincel.fill();
+
+	pincel.fillStyle='silver';
+	pincel.beginPath();
+	pincel.lineTo(500, 200); 
+	pincel.lineTo(600, 154);
+	pincel.lineTo(600, 400);
+	pincel.fill();
+
+	pincel.fillStyle='green';
+	pincel.beginPath();
+	pincel.lineTo(358, 300); 
+	pincel.lineTo(400, 400);
+	pincel.lineTo(600, 400);
+	pincel.fill()
+
+	pincel.fillStyle='pink';
+	pincel.beginPath();
+	pincel.lineTo(400, 318); 
+	pincel.lineTo(500, 200);
+	pincel.lineTo(600, 400);
+	pincel.fill()
+
+	pincel.fillStyle='gray';
+	pincel.beginPath();
+	pincel.lineTo(360, 300); 
+	pincel.lineTo(500, 200);
+	pincel.lineTo(310, 182);
+	pincel.fill()
+
+	pincel.fillStyle='blue';
+	pincel.beginPath();
+	pincel.lineTo(400, 100); 
+	pincel.lineTo(500, 201);
+	pincel.lineTo(400, 191);
+	pincel.fill();
+
+	pincel.fillStyle='orange';
+	pincel.beginPath();
+	pincel.lineTo(400, 318); 
+	pincel.lineTo(500, 200); //certo
+	pincel.lineTo(400, 271);
+	pincel.fill()
+
+
+	pincel.fillStyle= "white";
+    pincel.font= "18px arial";
+    pincel.fillText( "Paz", 40, 40);
+
+	pincel.fillStyle= "orange";
+    pincel.font= "22px arial";
+    pincel.fillText( "Amor", 250, 35);
+
+	pincel.fillStyle= "orange";
+    pincel.font= "22px arial";
+    pincel.fillText( "Paciência", 400, 375);
+
+    pincel.fillStyle= "Black";
+    pincel.font= "22px arial";
+    pincel.fillText( "Sinceridade", 340, 230);
+
+    pincel.fillStyle= "Green";
+    pincel.font= "22px arial";
+    pincel.fillText( "Confiança", 45, 165);
+ 
+ 	pincel.fillStyle= "Gray";
+    pincel.font= "20px arial";
+    pincel.fillText( "Determinação", 202, 120);
+
+ 	pincel.fillStyle= "White";
+    pincel.font= "20px arial";
+    pincel.fillText( "Coragem", 500, 50);
+
+    pincel.fillStyle= "Purple";
+    pincel.font= "24px arial";
+    pincel.fillText( "Esperança", 250, 350);
+
+    pincel.fillStyle= "pink";
+    pincel.font= "22px arial";
+    pincel.fillText( "Gratidão", 60, 375);
+
+    pincel.fillStyle= "blue";
+    pincel.font= "24px arial";
+    pincel.fillText( "Força", 115, 300);
+
+    pincel.fillStyle= "red";
+    pincel.font= "20px arial";
+    pincel.fillText( "Empatia", 520, 230);
+
+    pincel.fillStyle= "blue";
+    pincel.font= "22px arial";
+    pincel.fillText( "Lealdade", 445, 320);
+
+    pincel.fillStyle= "purple";
+    pincel.font= "18px arial";
+    pincel.fillText( "Confiança", 4, 310);
+
+    pincel.fillStyle= "brown";
+    pincel.font= "22px arial";
+    pincel.fillText( "Amizade", 410, 90);
+
+    pincel.fillStyle= "gray";
+    pincel.font= "20px arial";
+    pincel.fillText( "Felicidade", 460, 155);
+
+ 	pincel.fillStyle= "gold";
+    pincel.font= "22px arial";
+    pincel.fillText( "Saúde", 120, 70);
+
+</script>

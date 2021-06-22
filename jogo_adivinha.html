@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+	var numeroPensado = Math.round(Math.random() * 10); //Math.round arredonda o número gerado pelo ramdom que é mutiplicado por 10 para ficar um número de 1 a 10.
+	
+	//var numeroPensado = 5; Aqui eu trocaria cada vez o número, o que não é muito legal.
+	var chute = parseInt(prompt("Digite seu chute"));
+
+	if(chute == numeroPensado) {
+			mostra("Você acertou!")
+	} else {
+		mostra("Você errou, o número pensado foi " + numeroPensado);
+	}
+//Se não acontecer de o chute for = ao número pensado, será executado o else, que seria o oposto, não aconteceu o if, aconteceu o else, aconteceu o if, não acontecerá o else.
+</script>
