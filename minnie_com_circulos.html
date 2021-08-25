@@ -1,0 +1,99 @@
+<canvas width="600" height="400"></canvas>
+
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'skyblue';
+    pincel.fillRect(0, 0, 600, 400);
+
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2*3.14);
+        pincel.fill();
+      
+        pincel.fillStroke = "black";
+        pincel.strokeRect(0, 0, 600, 400);
+        pincel.strokeRect(0, 0, 600, 400);
+         pincel.strokeRect(0, 0, 600, 400);
+
+    }
+
+    desenhaCirculo(300, 200, 100, "black");
+  
+//orelhas
+    desenhaCirculo(230, 80, 50, "black");
+    desenhaCirculo(370, 80, 50, "clack");
+    desenhaCirculo(230, 80, 30, "Peachpuff");
+    desenhaCirculo(370, 80, 30, "Peachpuff");
+
+//Rosto
+    desenhaCirculo(280, 170, 40, "Peachpuff");
+    desenhaCirculo(330, 230, 50, "Peachpuff");
+    desenhaCirculo(320, 170, 40, "Peachpuff");
+    desenhaCirculo(270, 230, 50, "Peachpuff");
+    desenhaCirculo(300, 260, 40, "Peachpuff");
+    desenhaCirculo(300, 200, 30, "Peachpuff");
+   
+//laço
+    desenhaCirculo(250, 100, 40, "deeppink");
+    desenhaCirculo(350, 100, 40, "deeppink");
+    desenhaCirculo(300, 100, 20, "mediumorchid");
+    desenhaCirculo(225, 100, 15, "thistle");
+    desenhaCirculo(265, 120, 15, "thistle");
+    desenhaCirculo(270, 80, 15, "thistle");
+    desenhaCirculo(375, 100, 15, "thistle");
+    desenhaCirculo(335, 120, 15, "thistle");
+    desenhaCirculo(330, 80, 15, "thistle");
+
+//Olhos  
+    desenhaCirculo(280, 160, 20, "white");
+    desenhaCirculo(280, 170, 20, "white");
+    desenhaCirculo(320, 160, 20, "white");
+    desenhaCirculo(320, 170, 20, "white");
+    desenhaCirculo(280, 160, 10, "black");
+    desenhaCirculo(280, 170, 10, "black");
+    desenhaCirculo(320, 160, 10, "black");
+    desenhaCirculo(320, 170, 10, "black");
+    desenhaCirculo(320, 166, 5, "aqua");
+    desenhaCirculo(280, 166, 5, "aqua");
+    desenhaCirculo(320, 166, 2, "black");
+    desenhaCirculo(280, 166, 2, "black");
+
+//Nariz e Boca
+    desenhaCirculo(300, 205, 15, "black"); //Nariz
+    desenhaCirculo(300, 203, 3, "white");
+
+    desenhaCirculo(300, 260, 20, "black");
+    desenhaCirculo(330, 260, 10, "black");
+    desenhaCirculo(270, 260, 10, "black");
+    desenhaCirculo(340, 250, 10, "black");
+    desenhaCirculo(280, 250, 10, "black");
+    desenhaCirculo(320, 250, 10, "black");
+    desenhaCirculo(260, 250, 10, "black");
+    desenhaCirculo(320, 265, 10, "black");
+    desenhaCirculo(280, 265, 10, "black");
+    desenhaCirculo(330, 250, 10, "black");
+    desenhaCirculo(270, 250, 10, "black");
+
+
+    desenhaCirculo(300, 260, 18, "red");
+    desenhaCirculo(330, 260, 8, "red");
+    desenhaCirculo(270, 260, 8, "red");
+    desenhaCirculo(340, 250, 8, "red");
+    desenhaCirculo(280, 250, 8, "red");
+    desenhaCirculo(320, 250, 8, "red");
+    desenhaCirculo(260, 250, 8, "red");
+    desenhaCirculo(320, 265, 8, "red");
+    desenhaCirculo(280, 265, 8, "red");
+    desenhaCirculo(330, 250, 8, "red");
+    desenhaCirculo(270, 250, 8, "red");
+
+    pincel.fillStyle= "mediumvioletred";
+    pincel.font= "90px quicksand";
+    pincel.fillText( "Minnie", 160, 380);
+</script>
